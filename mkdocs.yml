@@ -1,10 +1,7 @@
 site_name: Data Engineering Notes
-site_url: https://karlchris.github.io/data-engineering/
-
-copyright: Copyright &copy; 2024 Karl Christian
 
 # Github spec
-repo_url: https://github.com/karlchris/data-engineering
+
 
 theme:
   name: material
