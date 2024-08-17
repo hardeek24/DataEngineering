@@ -126,9 +126,7 @@ When you finish, you’ll have a real-time app that consumes and processes data 
 
 First, you need to clone the repo.
 
-```bash
-git clone git@github.com:karlchris/kafka-docker.git
-```
+
 
 then, run below command to initialize the apps and its resources.
 
