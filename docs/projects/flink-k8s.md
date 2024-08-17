@@ -96,10 +96,9 @@ All lifecycle management operations are realized using this very simple principl
 
 ## Steps to deploy Flink Kubernetes Operator
 
-First, clone this repo [Flink on K8s](https://github.com/karlchris/flink-k8s), by running this command
+First, clone this repo [Flink on K8s], by running this command
 
-```bash
-git clone git@github.com:karlchris/flink-k8s.git
+
 ```
 
 ### 1. Create Flink Kubernetes Cluster
