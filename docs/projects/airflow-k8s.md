@@ -118,9 +118,7 @@ Consistent with the regular Airflow architecture, the Workers need access to the
 
 - First, you need to clone the repo
 
-```bash
-git clone git@github.com:karlchris/airflow-k8s.git
-```
+
 
 - run below command to install the prerequisites, such as: Docker, KinD, Kubectl
 
