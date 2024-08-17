@@ -1,0 +1,206 @@
+site_name: Data Engineering Notes
+site_url: https://karlchris.github.io/data-engineering/
+
+copyright: Copyright &copy; 2024 Karl Christian
+
+# Github spec
+repo_url: https://github.com/karlchris/data-engineering
+
+theme:
+  name: material
+
+  favicon: assets/img/sqldeveloper-original.svg
+  logo: assets/img/sqldeveloper-original.svg
+
+  icon:
+    annotation: material/plus-circle
+
+  font:
+    text: Fira Sans
+    code: Fira Code
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.extend
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+    - search.share
+
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: teal
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: teal
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: teal
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: "#"
+  - tables
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/karllchris
+    - icon: fontawesome/brands/github
+      link: https://github.com/karlchris
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@karl.christian
+
+# Pages Navigations
+nav:
+  - Preface: 'index.md'
+
+  - Projects:
+    - List of Projects: 'projects/README.md'
+    - Running dbt and BigQuery using Docker: 'projects/dbt-bq.md'
+    - Automated Data Quality Testing with Great Expectations and BigQuery: 'projects/great-expectations-bq.md'
+    - Deploying and Running Airflow on Kubernetes: 'projects/airflow-k8s.md'
+    - Building Github Pages using Github Actions: 'projects/gh-pages-gh-actions.md'
+    - Running Apache Flink on Kubernetes: 'projects/flink-k8s.md'
+    - Running Spark using Docker Compose: 'projects/spark-docker.md'
+    - Querying Streaming Data in Kafka using ksql: 'projects/kafka-ksql.md'
+    - Apache Iceberg and PySpark: 'projects/spark-iceberg.md'
+
+  - Data Engineering:
+    - What is Data Engineering?: 'data-engineering/README.md'
+    - Ingestion: 'data-engineering/ingestion/README.md'
+    - Transformation: 'data-engineering/transformation/README.md'
+    - Visualization: 'data-engineering/visualization/README.md'
+    - Storage: 'data-engineering/storage/README.md'
+    - DataOps/Security/Infrastructure: 'data-engineering/dataops/README.md'
+
+  - Data Modeling:
+    - What is Data Modeling?: 'data-modeling/README.md'
+    - Dimensional Modeling: 
+      - What is Dimensional Modeling?: 'data-modeling/dimensional-modeling/README.md'
+      - Challenge: 'data-modeling/dimensional-modeling/challenge.md'
+    - DDL vs. DML: 'data-modeling/ddl-vs-dml/README.md'
+    - Query Life Cycle: 'data-modeling/query-lifecycle/README.md'
+
+  - Data Ingestion: 
+    - What is data ingestion?: 'data-ingestion/README.md'
+    - Batch Ingestion: 'data-ingestion/batch/README.md'
+    - Streaming Ingestion: 'data-ingestion/streaming/README.md'
+    - Push vs. Pull: 'data-ingestion/push-pull/README.md'
+    - Methods:
+      - Secure File Transfer Protocol (SFTP): 'data-ingestion/methods/sftp.md'
+      - Application Programming Interface (API): 'data-ingestion/methods/api.md'
+      - Object Storage: 'data-ingestion/methods/object-storage.md'
+      - Change Data Capture (CDC): 'data-ingestion/methods/cdc.md'
+      - Streaming Platform: 'data-ingestion/methods/streaming-platform.md'
+
+  - Data Architecture: 
+    - What is Data Architecture?: 'data-architecture/README.md'
+    - Framework Architecture: 'data-architecture/framework-architecture/README.md'
+    - Storage Architecture: 'data-architecture/storage-architecture/README.md'
+
+  - Data Orchestration: 
+    - What is Data Orchestration?: 'data-orchestration/README.md'
+    - Airflow: 
+      - What is Airflow?: 'data-orchestration/airflow/README.md'
+      - Airflow DAG Design: 'data-orchestration/airflow/airflow-dag-design.md'
+    - Data Build Tool (dbt): 'data-orchestration/dbt/README.md'
+
+  - Data Processing:
+    - What is Data Processing?: 'data-processing/README.md'
+    - Apache Spark:
+      - What is Apache Spark?: 'data-processing/apache-spark/README.md'
+      - Spark Optimizations: 'data-processing/apache-spark/spark-optimization.md'
+    - Google BigQuery:
+      - What is Google BigQuery?: 'data-processing/bigquery/README.md'
+
+  - Data Quality: 
+    - What is data quality?: 'data-quality/README.md'
+    - dbt test: 'data-quality/dbt-test/README.md'
+
+  - Python:
+    - Why Python?: 'learning-python/README.md'
+    - Object Oriented Programming:
+      - What is OOP?: 'learning-python/oop/README.md'
+      - Class: 'learning-python/oop/class/README.md'
+      - Encapsulation: 'learning-python/oop/encapsulation/README.md'
+      - Inheritance: 'learning-python/oop/inheritance/README.md'
+      - Polymorphism: 'learning-python/oop/polymorphism/README.md'
+      - Object Relationship: 'learning-python/oop/object-relationship/README.md'
+    - Functional Programming: 'learning-python/functional-programming/README.md'
+    - Unit Testing:
+      - What is Unit Testing?: 'learning-python/unit-testing/README.md'
+      - Assertion: 'learning-python/unit-testing/assertion/README.md'
+      - Exceptions: 'learning-python/unit-testing/exceptions/README.md'
+      - Fixtures: 'learning-python/unit-testing/fixtures/README.md'
+      - Decorator: 'learning-python/unit-testing/decorator/README.md'
+      - Parametrizing: 'learning-python/unit-testing/parametrizing/README.md'
+      - Mocking: 'learning-python/unit-testing/mocking/README.md'
+    - Scaling Python:
+      - What is Scaling with Python?: 'learning-python/scaling-python/README.md'
+      - CPU Scaling: 'learning-python/scaling-python/cpu-scaling/README.md'
+      - Asynchronous Events: 'learning-python/scaling-python/async-solution/README.md'
+      - Queue-based Distribution: 'learning-python/scaling-python/queue-distribution/README.md'
+
+  - About me: 'author.md'
