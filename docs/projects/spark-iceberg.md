@@ -171,9 +171,8 @@ Within the Catalog layer, there is a reference or pointer, that points to the cu
 
 First, you need to clone this repo
 
-```bash
-git clone git@github.com:karlchris/spark-docker.git
-```
+
+
 
 - Add Iceberg installation in the Dockerfile
 
