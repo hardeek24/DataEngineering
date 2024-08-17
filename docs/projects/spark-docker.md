@@ -2,11 +2,7 @@
 
 ![spark-docker-diagram](pics/spark-docker-diagram.png)
 
-For better following this exercise, you should clone the repo `spark-docker`
 
-```bash
-git clone git@github.com:karlchris/spark-docker.git
-```
 
 ## Spark Containers and Components
 
