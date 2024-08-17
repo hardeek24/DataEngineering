@@ -35,9 +35,8 @@ gcloud auth application-default login
 
 - clone the repo first, run this command
 
-```bash
-git clone git@github.com:karlchris/dbt-bigquery.git
-```
+
+
 
 - update your dbt `profiles.yml` with your GCP **[project name]**
 
